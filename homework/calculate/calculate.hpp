@@ -6,10 +6,10 @@ std::string calculate(const std::string& command, int first, int second) {
     int result;
     if (command == "add"){
         result = first + second;
-        wynik = std::to_string(result);
     }
-
-
+    else if (command == "subtract"){
+        result = first - second;
+    }
     
-    return wynik;
+    return wynik = std::to_string(result);
 }
