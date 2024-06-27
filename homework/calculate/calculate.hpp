@@ -2,7 +2,6 @@
 #include <string>
 
 std::string calculate(const std::string& command, int first, int second) {
-    std::string wynik;
     int result;
     if (command == "add"){
         result = first + second;
@@ -25,5 +24,5 @@ std::string calculate(const std::string& command, int first, int second) {
         return "Invalid data";
     }
 
-    return wynik = std::to_string(result);
+    return std::to_string(result);
 }
