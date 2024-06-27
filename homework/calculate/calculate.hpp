@@ -17,15 +17,13 @@ std::string calculate(const std::string& command, int first, int second) {
       if (first == 0 || second == 0){
         return "Division by 0";
       }
-      else{
+    else{
         result = first / second;
       } 
     }
     else {
         return "Invalid data";
     }
-
-
 
     return wynik = std::to_string(result);
 }
