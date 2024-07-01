@@ -1,6 +1,6 @@
 #pragma once
-#include <iostream>
 #include <cstdlib>
+#include <iostream>
 
 int NWD(int lhs, int rhs) {
     lhs = std::abs(lhs);
@@ -30,5 +30,5 @@ int NWW(int lhs, int rhs) {
     if (lhs == 0 || rhs == 0) {
         return 0;
     }
-    return std::abs(lhs / NWD (lhs, rhs)) * std::abs(rhs);
+    return std::abs(lhs / NWD(lhs, rhs)) * std::abs(rhs);
 }
