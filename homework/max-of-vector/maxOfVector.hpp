@@ -7,7 +7,6 @@ int maxOfVector(const std::vector<int>& vec) {
     for (auto it : vec) {
         if (it > max_value) {
             max_value = it;
-        }
-    }   
+        }    
     return max_value;
 }
