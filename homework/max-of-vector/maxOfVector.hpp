@@ -1,8 +1,15 @@
 #pragma once
-#include <vector>
+#include <iostream>
 #include <limits>
+#include <vector>
 
 int maxOfVector(const std::vector<int>& vec) {
-    // TODO: Implement me :)
-    return {};
+    int max_value = std::numeric_limits<int>::min();
+    for (auto it : vec) {
+        if (it > max_value) {
+            max_value = it;
+        }
+        std::cout << max_value << ", ";
+    }   
+    return max_value;
 }
