@@ -9,7 +9,7 @@ int maxOfVector(const std::vector<int>& vec) {
         if (it > max_value) {
             max_value = it;
         }
-        std::cout << max_value << ", ";//
+        std::cout << max_value << ", ";
     }   
     return max_value;
 }
