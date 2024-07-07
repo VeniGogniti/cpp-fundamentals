@@ -12,7 +12,7 @@ std::string getErrorMessage(ErrorCode code) {
         return "Password needs to have at least one special character";
     case ErrorCode::PasswordNeedsAtLeastOneUppercaseLetter:
         return "Password needs to have at least one uppercase letter";
-
+    case ErrorCode::PasswordsDoNotMatch:
         return "Passwords do not match";
     default: return "Error";
     }
