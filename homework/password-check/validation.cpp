@@ -14,7 +14,8 @@ std::string getErrorMessage(ErrorCode code) {
         return "Password needs to have at least one uppercase letter";
     case ErrorCode::PasswordsDoNotMatch:
         return "Passwords do not match";
-    default: return "Error";
+    default:
+        return "Error";
     }
 }
 
@@ -40,7 +41,7 @@ ErrorCode checkPasswordRules(std::string pwd) {
             }
         }
         return ErrorCode::Ok;
-        
+
     } else if (pwd.size() < 9) {
         return ErrorCode::PasswordNeedsAtLeastNineCharacters;
     }
